@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap icon link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- customize css -->
+    <link rel="stylesheet" href="firstpayment.css">
+    <!-- font awesome icons link -->
+
+    <title>Readycoder - Payment Page</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="foam">
+        <div class="box-1">
+            <div class="page-content">
+                <div class="form-v10-content">
+                    <form class="form-detail" action="#" method="post" id="myform">
+                        <div class="form-right">
+                            <h2>Contact Details</h2>
+                            <div class="form-row">
+                                <input type="text" name="street" class="street" id="street" placeholder="Street + Nr"
+                                    required>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" name="additional" class="additional" id="additional"
+                                    placeholder="Additional Information" required>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row form-row-1">
+                                    <input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
+                                </div>
+                                <div class="form-row form-row-2">
+                                    <select name="place">
+                                        <option value="place">Place</option>
+                                        <option value="Street">Street</option>
+                                        <option value="District">District</option>
+                                        <option value="City">City</option>
+                                    </select>
+                                    <span class="select-btn">
+                                        <i class="zmdi zmdi-chevron-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <select name="country">
+                                    <option value="country">Country</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="India">India</option>
+                                </select>
+                                <span class="select-btn">
+                                    <i class="zmdi zmdi-chevron-down"></i>
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row form-row-1">
+                                    <input type="text" name="code" class="code" id="code" placeholder="Code +" required>
+                                </div>
+                                <div class="form-row form-row-2">
+                                    <input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" name="your_email" id="your_email" class="input-text" required
+                                    pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+                            </div>
+                            <div class="form-checkbox">
+                                <label class="containerr">
+                                    <p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.
+                                    </p>
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-row-last">
+                                <input type="submit" name="register" class="register" value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="inp">
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="How would you like your Website to be ? Give us your Views ."></textarea>
+                    <textarea name="text" class="feedback-input" placeholder="How do you feel about our services till now ?😉"></textarea>
+                    <input type="submit" value="SUBMIT"/>
+                  </form>  
+            </div>
+        </div>
+    </div>
+    <div class="box-33">
+        <img src="pay-img.png" alt="Loading">
+    </div>
+    <div class="box-4">
+        <div class="container mt-5 px-5">
+            <div class="mb-4">
+                <h2>Confirm order and pay</h2>
+                <span>please make the payment, after that you can enjoy all the features and benefits.</span>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="card p-3">
+                        <h6 class="text-uppercase">Payment details</h6>
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control"
+                                required="required"> <span>Name on card</span> </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="inputbox mt-3 mr-2"> <input type="text" name="name" class="form-control"
+                                        required="required"> <i class="fa fa-credit-card"></i> <span>Card
+                                        Number</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-row">
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name"
+                                            class="form-control" required="required"> <span>Expiry</span> </div>
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name"
+                                            class="form-control" required="required"> <span>CVV</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 mb-4">
+                            <h6 class="text-uppercase">Billing Address</h6>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name"
+                                            class="form-control" required="required"> <span>Street Address</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name"
+                                            class="form-control" required="required"> <span>City</span> </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name"
+                                            class="form-control" required="required"> <span>State/Province</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="inputbox mt-3 mr-2"> <input type="text" name="name"
+                                            class="form-control" required="required"> <span>Zip code</span> </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mt-4 mb-4 d-flex justify-content-between">
+                        <button class="btn btn-success px-3">Pay $849</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card card-blue p-3 text-white mb-3">
+
+                        <span>You have to pay</span>
+                        <div class="d-flex flex-row align-items-end mb-3">
+                            <h1 class="mb-0 yellow">$849</h1> <span></span>
+                        </div>
+
+                        <span>Enjoy all the features and perk after you complete the payment</span>
+                        <a href="#" class="yellow decoration">Know all the features</a>
+
+                        <div class="hightlight">
+
+                            <span>100% Guaranteed support and update for the next 5 years.</span>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="box-11">
+            <div class="copy-text">
+                Copyright 2020 .All rights reserved by ReadyCoder International Ltd
+            </div>
+            <div class="copy-icons c-icons">
+                <i class="bi bi-facebook"></i> <i class="bi bi-instagram"></i> <i class="bi bi-twitter"></i> <i
+                    class="bi bi-google"></i> <i class="bi bi-linkedin"></i> <i class="bi bi-globe2"></i>
+
+            </div>
+    </footer>
+
+</body>
+
+</html>
